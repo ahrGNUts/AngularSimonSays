@@ -8,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class GameButtonsComponent implements OnInit {
   rowOne = [ 'Green', 'Red' ];
   rowTwo = [ 'Yellow', 'Blue' ];
+  score = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  gameButtonClicked($event) {
+    console.log($event);
   }
 
 }
