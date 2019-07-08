@@ -9,6 +9,10 @@
   outline-color: #FFF;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .btnGreen {
   background-color: green;
 }
