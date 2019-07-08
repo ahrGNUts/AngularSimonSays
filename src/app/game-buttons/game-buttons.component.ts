@@ -1,22 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
+import { GameService } from '../services/game.service';
 
 @Component({
   selector: 'app-game-buttons',
   templateUrl: './game-buttons.component.html',
   styleUrls: ['./game-buttons.component.css']
 })
-export class GameButtonsComponent implements OnInit {
+export class GameButtonsComponent implements OnInit, AfterContentInit {
   rowOne = [ 'Green', 'Red' ];
   rowTwo = [ 'Yellow', 'Blue' ];
-  score = 0;
+  score = this.gameService.getScore();
 
-  constructor() { }
+  constructor(private gameService: GameService) { }
 
   ngOnInit() {
   }
 
+  ngAfterContentInit() {
+    this.gameService.startGame();
+  }
+
   gameButtonClicked($event) {
-    console.log($event);
+    if (this.gameService.isGameRunning()){
+      // TODO: game logic
+    }
   }
 
 }
