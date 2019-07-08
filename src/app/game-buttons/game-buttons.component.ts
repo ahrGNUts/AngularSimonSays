@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-buttons.component.css']
 })
 export class GameButtonsComponent implements OnInit {
+  rowOne = [ 'Green', 'Red' ];
+  rowTwo = [ 'Yellow', 'Blue' ];
 
   constructor() { }
 

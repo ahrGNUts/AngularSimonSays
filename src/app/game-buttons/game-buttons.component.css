@@ -1,0 +1,30 @@
+.buttonContainer {
+  width: 100%;
+}
+
+.gameButton {
+  width: 100%;
+  height: 7.5rem;
+  border-radius: 10px;
+  outline-color: #FFF;
+}
+
+.btnGreen {
+  background-color: green;
+}
+
+.btnRed {
+  background-color: red;
+}
+
+.btnYellow {
+  background-color: yellow;
+}
+
+.btnBlue {
+  background-color: blue;
+}
+
+.scoreLabel {
+  width: 100%;
+}

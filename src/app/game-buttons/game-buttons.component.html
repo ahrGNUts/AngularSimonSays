@@ -1,1 +1,20 @@
-<p>game-buttons works!</p>
+<div class="container">
+  <div class="buttonContainer mt-3">
+    <div class="row">
+      <div class="col-6" *ngFor="let color of rowOne">
+        <button type="button" class="gameButton btn{{color}}" name="btn{{color}}"></button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-6" *ngFor="let color of rowTwo">
+        <button type="button" class="gameButton btn{{color}}" name="btn{{color}}"></button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center scoreLabel">
+      <span>Score: #</span>
+    </div>
+  </div>
+</div>
+
