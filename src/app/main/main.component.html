@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngIf="!gameRunning; else playGame">
+    <div class="row">
+      <div class="col-12 text-center">
+          <span>CLICK THE BUTTON TO START THE GAME</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+          <button type="button" class="btn btn-secondary" name="startGame" (click)="startGame()">S T A R T</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #playGame>
+    <app-game-buttons></app-game-buttons>
+  </ng-template>
+</div>
